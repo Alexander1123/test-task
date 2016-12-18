@@ -1667,20 +1667,25 @@ font-size: 17px;
   /*НАЧАЛО СЕКЦИИ SLIDER*/
 .slider{
 display: -webkit-flex;
-display: -moz-flex;
+display: -moz-box;
 display: -ms-flexbox;
-display: -o-flex;
+display: -webkit-box;
 display: flex;
 -webkit-flex-direction:column;
--moz-flex-direction: column;
--ms-flex-direction: column;
--o-flex-direction:column;
+/*-moz-box-direction: column;*/
+
+    -ms-flex-direction: column;
 flex-direction: column;
 margin-bottom: 17px;
 }
 .slider-header{
-order:0;
--ms-flex-order: 0;
+    -ms-flex-order: 2;
+    order:2;
+
+}
+.slider-container{
+    order:2;
+    -ms-flex-order: 2;
 }
 .header-benefits{
 width: 320px;
@@ -1769,8 +1774,9 @@ padding: 4px 8px 3px 8px;
 border: 2px solid #b4b4b4;
 }
 .slider-inside{
--ms-flex-order: 0;
-order:0;
+/*-ms-flex-order: 0;*/
+/*order:0;*/
+
 }
 .slider-menu-icon {
 width: 32px;
@@ -1805,8 +1811,10 @@ vertical-align: top;
 display: none;
 }
 .slider-footer{
--ms-flex-order: -1;
-order:-1;
+
+    order:1;
+    -ms-flex-order: 1;
+
 }
 .header-benefits p {
 text-align: right;
