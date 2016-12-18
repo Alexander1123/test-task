@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Rajdhani";
-    src:local('Rajdhani'), url("../fonts/Rajdhani/Rajdhani.ttf"),
+    src:local('Rajdhani'), url("../fonts/Rajdhani/Rajdhani.ttf");
     url("../fonts/Rajdhani/Rajdhani.woff2") format("woff2"),
     url("../fonts/Rajdhani/Rajdhani.woff") format("woff"),
     url("../fonts/Rajdhani/Rajdhani.ttf") format("truetype");
@@ -296,8 +296,7 @@ margin-bottom: 88px;
 }
 .benefits-item-header{
 max-width: 260px;
-margin:0 auto;
-margin-bottom: 22px;
+    margin: 0 auto 22px auto;
 text-align: center;
 }
 .benefits-item-header_logo{
@@ -752,8 +751,7 @@ margin: 0 auto;
 }
 .social-instagram-header {
 max-width: 260px;
-margin:0 auto;
-margin-bottom: 36px;
+    margin: 0 auto 36px auto;
 text-align: center;
 }
 .social-instagram-header_logo{
@@ -862,8 +860,7 @@ margin: 0 auto;
 }
 .social-famous-header{
 max-width: 260px;
-margin:0 auto;
-margin-bottom: 36px;
+    margin: 0 auto 36px auto;
 text-align: center;
 }
 .social-famous-header_logo{
@@ -871,7 +868,7 @@ position: relative;
 font-family: RajdhaniR,sans-serif;
 font-size: 23px;
 line-height: 29px;
-left: 0px;
+left: 0;
 letter-spacing: 1px;
 }
 .social-famous-header_logo:before{
@@ -1498,7 +1495,7 @@ content: '';
 height: 12px;
 width: 46px;
 display: block;
-background: url(../img/different/arow-left-tablet.png) no-repeat;
+background: url(../img/INSTAGRAM/arow-left-tablet.png) no-repeat;
 position: absolute;
 top: 10px;
 left: -15px;
@@ -1508,7 +1505,7 @@ content: '';
 height: 12px;
 width: 46px;
 display: block;
-background: url(../img/different/arow-right-tablet.png ) no-repeat;
+background: url(../img/INSTAGRAM/arow-right-tablet.png) no-repeat;
 position: absolute;
 top: 10px;
 right: -20px;
@@ -1885,7 +1882,7 @@ width: 127px;
 .category-items {
 display: block;
 width: 94%;
-margin: 0;
+
 margin-left: 9px;
 }
 .item-firstcall {
@@ -2004,7 +2001,7 @@ content: '';
 height: 12px;
 width: 68px;
 display: block;
-background: url(../img/different/arrow-mobile-left.png) no-repeat;
+background: url(../img/INSTAGRAM/arrow-mobile-left.png) no-repeat;
 position: absolute;
 top: 10px;
 left: -16px;
@@ -2014,7 +2011,7 @@ content: '';
 height: 12px;
 width: 68px;
 display: block;
-background: url(../img/different/arrow-mobile-right.png) no-repeat;
+background: url(../img/INSTAGRAM/arrow-mobile-right.png) no-repeat;
 position: absolute;
 top: 10px;
 right: -40px;
@@ -2075,9 +2072,8 @@ width: 292px;
 display: none;
 }
 .navi-links-row {
-font-family: RajdhaniS;
-
-width: 100%;
+font-family: RajdhaniS,sans-serif;
+    width: 100%;
 display: inline-block;
 text-align: center;
 margin-right: 0;
@@ -2127,7 +2123,7 @@ width: 100%;
 .navi-links-nome_cadmod {
 
 font-size: 19px;
-font-family:RajdhaniS;
+font-family:RajdhaniS,sans-serif;
 color: #fff;
 text-decoration: none;
 background: #d0d0d0;
