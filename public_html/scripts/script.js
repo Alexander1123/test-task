@@ -122,6 +122,74 @@ function sliderResize() {
     });
   }
 }
+
+//для отображения скрытого левого меню
+$(document).ready(function(){
+    PopUpHide();
+});
+
+function PopUpShow(){
+    $("#popup-menu-left").show();
+}
+function PopUpHide(){
+    $("#popup-menu-left").hide();
+}
+
+$(document).ready(function(){
+    $(".menu-inner > a.menu-inner-link").on("click", function(){
+        if($(this).hasClass('active')){
+            $(this).removeClass("active");
+            $(this).siblings('.menu-inner-content').slideUp(200);
+            $(".menu-inner > .menu-inner-link i").removeClass("fa-minus").addClass("fa-plus");
+        }else{
+            $(".menu-inner > .menu-inner-link i").removeClass("fa-minus").addClass("fa-plus");
+            $(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+            $(".menu-inner > .menu-inner-link").removeClass("active");
+            $(this).addClass("active");
+            $('.menu-inner-content').slideUp(200);
+            $(this).siblings('.menu-inner-content').slideDown(200);
+        }
+    });
+});
+
+// для отображения скрытого правого меню
+$(document).ready(function(){
+    PopUpHideR();
+});
+
+function PopUpShowR(){
+    $("#popup-menu-right").show();
+}
+function PopUpHideR(){
+    $("#popup-menu-right").hide();
+
+}
+var demo = 88;
+function myFunctionminus() {
+    demo --;
+    document.getElementById("demo").innerHTML = demo ;
+
+    return true;
+}
+function myFunctionplus() {
+    demo++;
+    document.getElementById("demo").innerHTML = demo ;
+    return true;
+}
+
+var demoo = 88;
+function myFunctionminuss() {
+    demoo --;
+    document.getElementById("demoo").innerHTML = demoo ;
+
+    return true;
+}
+function myFunctionpluss() {
+    demoo++;
+    document.getElementById("demoo").innerHTML = demoo ;
+    return true;
+}
+
 //слайдер-карусель при минимальной ширине Social instagram
 if ($(window).width()< 321){
   $('.social-instagram-icons').bxSlider({

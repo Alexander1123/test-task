@@ -76,16 +76,171 @@
         <div class="slider-footer">
             <div class="slider-footer-wrapper">
                 <div class="slider-menu-icon">
-                    <a href="index.html" class="menu-icon-burger"></a>
-		</div>
-		<div class="menu-main-line">
+                    <a  href="javascript:PopUpShow()" class="menu-icon-burger"></a>
+                </div>
+
+                <div class="slider-menu-popup-left" id="popup-menu-left">
+                    <div class="slider-menu-popup-cont-left">
+                        <div class="menu-layer">
+                            <div class="menu-layer-start">
+                                <p class="start-logoR">menu</p>
+                                <div class="menu-layer-close">
+                                    <a class="menu-layer-close_link" id="close" href="javascript:PopUpHide()"></a>
+                                </div>
+                            </div>
+                            <div class="menu-layer-search">
+                                <div class="seasrc-container">
+                                    <input type="search" id="search" placeholder="O QUE ESTÁ PROCURANDO?" />
+                                    <button class="icon"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </div>
+
+                                <div class="menu-inner">
+                                    <a class="menu-inner-link" href="javascript:void(0);">SOBRE<i class="fa fa-plus" aria-hidden="true"></i></a>
+                                    <div class="menu-inner-content">
+                                        <p class="menu-inner-content_par">SOBRE</p>
+                                        <p class="menu-inner-content_par">SOBRE</p>
+                                        <p class="menu-inner-content_par">SOBRE</p>
+                                        <p class="menu-inner-content_par">SOBRE</p>
+
+                                    </div>
+                                </div>
+                                <div class="menu-inner">
+                                    <a class="menu-inner-link" href="javascript:void(0);">COLEÇÕES<i class="fa fa-plus" aria-hidden="true" ></i></a>
+                                    <div class="menu-inner-content">
+                                        <p class="menu-inner-content_par">COLEÇÕES</p>
+                                        <p class="menu-inner-content_par">COLEÇÕES</p>
+                                        <p class="menu-inner-content_par">COLEÇÕES</p>
+                                        <p class="menu-inner-content_par">COLEÇÕES</p>
+
+                                    </div>
+                                </div>
+                                <div class="menu-inner">
+                                    <a class="menu-inner-link" href="javascript:void(0);">CATEGORIA<i class="fa fa-plus"></i></a>
+                                    <div class="menu-inner-content">
+                                        <p class="menu-inner-content_par">CATEGORIA</p>
+                                        <p class="menu-inner-content_par">CATEGORIA</p>
+                                        <p class="menu-inner-content_par">CATEGORIA</p>
+                                        <p class="menu-inner-content_par">CATEGORIA</p>
+
+                                    </div>
+                                </div>
+                                <div  class="menu-inner">
+                                    <a class="menu-inner-link" href="javascript:void(0);">LOOKS<i class="fa fa-plus"></i></a>
+                                    <div class="menu-inner-content">
+                                        <p class="menu-inner-content_par">LOOKS</p>
+                                        <p class="menu-inner-content_par">LOOKS</p>
+                                        <p class="menu-inner-content_par">LOOKS</p>
+                                        <p class="menu-inner-content_par">LOOKS</p>
+                                    </div>
+                                </div>
+                                <div class="menu-inner">
+                                    <a class="menu-inner-link" href="javascript:void(0);">CONTATO <i class="fa fa-plus"></i></a>
+                                    <div class="menu-inner-content">
+                                        <p class="menu-inner-content_par">CONTATO</p>
+                                        <p class="menu-inner-content_par">CONTATO</p>
+                                        <p class="menu-inner-content_par">CONTATO</p>
+                                        <p class="menu-inner-content_par">CONTATO</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layer-social-footer">
+                                <nav class="soical-footer">
+                                    <a class="social-footer-menu-links" href="index.html"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a class="social-footer-menu-links" href="index.html"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a class="social-footer-menu-links" href="index.html"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </nav>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-main-line">
                     <h2 class="main-line_logo">cloth & fashion</h2>
                 </div>
 		<div class="menu-login-cart">
                     <a class="menu-login-cart_link" href="">Login</a>
-                    <a class="menu-login-cart_imglogo" href="index.html"><img src="img/slider_img/cart.png" alt="cart"></a>
+                    <a class="menu-login-cart_imglogo" href="javascript:PopUpShowR()"><img src="img/slider_img/cart.png" alt="cart"></a>
                         <span class="cart-purchase">88</span>
 		</div>
+                <div class="slider-menu-popup-right" id="popup-menu-right">
+                    <div class="slider-menu-popup-cont-right">
+                <div class="cart-inner-menu">
+
+                    <div class="cart-menu-start">
+                        <div class="cart-menu-start-wrapper">
+
+                            <div class="cart-start-logo">
+                                <span class="start-logo">MEU CARRINHO</span>
+                                <a class="cart-logo-link" href="javascript:PopUpHideR()"><img src=" img/img-menu-hide/cart-link.png" alt="logo"/></a>
+                                <span class="cart-logo-link_price">88</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-inner-benefits-mainblock">
+                        <div class="cart-inner-benefits">
+                            <div class="cart-inner-menu-wrapper">
+                                <div class="benefits-selection-left">
+                                    <a class="selection-link clearfix" href="index.html"><img src="img/img-menu-hide/benefit-menu-inner.png" alt="benfit"/></a>
+                                    <div class="selection-options">
+                                        <h2 class="options-name">Nome do Produto</h2>
+                                        <div class="btn"></div>
+                                        <div class="selection-purchases">
+                                            <button class="selection-purchases-but" onclick="myFunctionminus()">-</button>
+                                            <span class="purchases-number" id="demo">88</span>
+                                            <button class="selection-purchases-but" onclick="myFunctionplus()">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="benefits-selection-right">
+                                    <a class="selection-right-del" href="index.html">1</a>
+                                    <p class="selection-price"> R$88,88</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-inner-benefits">
+                            <div class="cart-inner-benefits-wrapper">
+
+                                <div class="benefits-selection-left">
+                                    <a class="selection-link clearfix" href="index.html"><img src="img/img-menu-hide/benefit-menu-inner.png" alt="benfit"/></a>
+                                    <div class="selection-options">
+                                        <h2 class="options-name">Nome do Produto</h2>
+                                        <div class="btn"></div>
+                                        <div class="selection-purchases">
+                                            <button class="selection-purchases-but" onclick="myFunctionminuss()">-</button>
+                                            <span class="purchases-number" id="demoo">88</span>
+                                            <button class="selection-purchases-but" onclick="myFunctionpluss()">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="benefits-selection-right">
+                                    <a class="selection-right-del" href="index.html">1</a>
+                                    <p class="selection-price"> R$88,88</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-benefits-order">
+                        <div class="benefits-order-inner">
+                            <div class="footer-inner-benefits-wrapper">
+                                <span class="benefits-price-par">TOTAL</span>
+                                <span class="benefits-price-total">R$88,88</span>
+                            </div>
+                        </div>
+                        <div class="benefits-order-verification">
+
+                            <div class="order-purchases">
+                                <a class="order-purchases-par mod" href="index.html">CONTINUAR</a>
+                                <a class="order-purchases-parm mod" href="index.html">COMPRANDO</a>
+                            </div>
+                            <div class="order-control">
+                                <a class="order-control-par" href="index.html">CHECKOUT</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+               </div>
+                </div>
             </div>
         </div>
     </section>
@@ -279,7 +434,7 @@
                                 <div class="social-icons-overlay">
                                     <div class="social-icons-overlay-in">
                                         <div class="social-icons-overlay-align">
-                                            <a href=" javascript: void(0)">
+                                            <a href="javascript: void(0);">
                                             <i class="fa fa-heart" aria-hidden="true"></i>
                                             </a>
                                             <p class="social-icons-paragraf">1.323 likes</p>

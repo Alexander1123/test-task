@@ -65,6 +65,7 @@
 .container{
 max-width: 1600px;
 margin: 0 auto;
+    position: relative;
 
 }
 /*начало первой секции*/
@@ -226,6 +227,451 @@ position: absolute;
 width: 32px;
 border-top: 3px solid #fff;
 bottom: 4px;
+}
+/*начало секции скрытого меню*/
+
+.slider-menu-popup-left{
+    width: 100%;
+    left: 0;
+    min-height: 100%;
+    position: absolute;
+    z-index: 10000;
+    top: 1px;
+    display: none;
+    background:url("../img/slider_img/opacity-BG.png");
+}
+.slider-menu-popup-left .slider-menu-popup-cont-left {
+    position: absolute;
+    top: 19.2%;
+    width: 600px;
+    height: 710px;
+}
+
+.menu-layer-start{
+    font-family:"RajdhaniM",sans-serif ;
+
+    background: #000;
+    padding: 11px 10px 11px 185px;
+}
+.start-logoR{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: inline-block;
+    color: #ffffff;
+}
+.menu-layer-close{
+
+    display: inline-block;
+    float: right;
+    position: relative;
+    right: 5px;
+    width: 25px;
+    height: 30px;
+}
+.menu-layer-close_link{
+    color: #ffffff;
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+.menu-layer-close_link:after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 30px;
+    top: -3px;
+    right: 8px;
+    background: #FFF;
+    TRANSFORM: rotate(44deg)
+}
+.menu-layer-close_link:before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 30px;
+    top: -3px;
+    right: 8px;
+    background: #FFF;
+    TRANSFORM: rotate(-44deg)
+}
+.menu-layer{
+    background: white;
+    position: relative;
+    width: 600px;
+    height: 654px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+.menu-layer-search{
+    background: #b1b1b1;
+    margin-bottom: 136px;
+}
+.seasrc-container{
+    width: 415px;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: 9px 1px 8px 175px;
+}
+.seasrc-container input#search{
+
+    width: 358px;
+    height: 45px;
+    background: #fff;
+    border: none;
+    font-size: 14px;
+    float: left;
+    color: #000;
+    padding-left: 12px;
+}
+.seasrc-container input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+.seasrc-container input#search:-moz-placeholder { /* Firefox 18- */
+    color: #65737e;
+}
+.seasrc-container input#search::-moz-placeholder {  /* Firefox 19+ */
+    color: #65737e;
+}
+.seasrc-container input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+.seasrc-container button.icon{
+    border: none;
+    background: #232833;
+    height: 45px;
+    width: 45px;
+    font-size: 21px;
+    margin-left: 16px;
+    color: #fff;
+}
+.menu-inner{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+.menu-inner-link{
+    font-family: "RajdhaniM",sans-serif;
+    font-size: 22px;
+    display: block;
+    padding: 28px 22px 24px 175px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    border-bottom: 1px solid #ddd;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+
+}
+
+.menu-inner-link i{
+    position:relative;
+    float: right;
+    margin-top:4px;
+    font-size: 16px;
+    width: 13px;
+    font-weight: normal;
+}
+.menu-inner-link.active{
+
+    color: #000;
+}
+.menu-inner-link.active i{
+    color: #000;
+    font-size: 14px;
+    font-weight: normal;
+}
+.menu-inner-content{
+    position:relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    display:none;
+}
+.menu-inner-content_par{
+    font-family: "RajdhaniM",sans-serif;
+    font-size: 22px;
+    padding: 10px 0 10px 175px;
+    margin: 0;
+    color: #fff;
+    background: #000;
+    border-bottom: 1px solid #ffffff;
+    position: relative;
+}
+.menu-inner-content_par:before {
+    content: '';
+    position: absolute;
+    border: 2px solid #fff;
+    border-right-width: 0;
+    border-top-width: 0;
+    color: white;
+    right: 28px;
+    top: 17px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-134deg);
+}
+.layer-social-footer{
+    text-align: right;
+    margin-right: 17px
+}
+
+.social-footer-menu-links{
+    color: #000;
+    font-size: 28px;
+    margin-right: 6px;
+}
+/*конец секции скрытого меню*/
+
+/*начало секции  правого скрытого меню*/
+.slider-menu-popup-right{
+    width: 100%;
+    right: 0;
+    min-height: 100%;
+    position: absolute;
+    z-index: 10000;
+    top: 1px;
+    display: none;
+    background:url("../img/slider_img/opacity-BG.png");
+}
+.slider-menu-popup-right .slider-menu-popup-cont-right {
+    position: absolute;
+    top: 19.2%;
+    right: 0;
+    width: 600px;
+    height: 710px;
+
+}
+
+.cart-inner-menu{
+    width: 600px;
+    background: white;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+.cart-inner-menu-wrapper{
+    width: 420px;
+    margin-bottom: -3px;
+}
+.cart-menu-start{
+    background: #000;
+    color: #fff;
+}
+.cart-menu-start-wrapper{
+    width:420px;
+}
+.cart-start-logo{
+    display: block;
+    text-align: right;
+    position: relative;
+    padding: 7px 0;
+}
+.start-logo{
+    font-family: "RajdhaniM",sans-serif;
+    font-size: 20px;
+    display: block;
+    float: left;
+    position: relative;
+    padding: 6px 0 0 24px;
+}
+.cart-logo-link{
+    display: inline-block;
+}
+.cart-logo-link_price{
+    font-family: "RajdhaniM",sans-serif;
+    font-size: 16px;
+    display: block;
+    position: absolute;
+    height: 26px;
+    width: 25px;
+    padding-top: 5px;
+    background-color: #fff;
+    border-radius: 20px;
+    top: 1px;
+    font-weight: 600;
+    text-align: center;
+    right: 17px;
+    border: 1px solid #000;
+    color: black;
+}
+.cart-inner-benefits-mainblock{
+    margin-bottom: 237px;
+}
+.cart-inner-benefits{
+    border-bottom: 1px solid #b1b1b1;
+}
+.cart-inner-benefits-wrapper{
+    margin-bottom: -3px;
+}
+.benefits-selection-left{
+    display: inline-block;
+    margin-right: 105px;
+}
+.selection-link{
+    display: block;
+    float: left;
+    margin-right: 9px;
+}
+.selection-options{
+    display: inline-block;
+    margin-top: 7px;
+}
+.options-name{
+    font-family: "RajdhaniS",sans-serif;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.btn{
+    display: inline-block;
+    background: #000000;
+    background-image: -webkit-linear-gradient(top, #000000, #000000);
+    background-image: -moz-linear-gradient(top, #000000, #000000);
+    background-image: -ms-linear-gradient(top, #000000, #000000);
+    background-image: -o-linear-gradient(top, #000000, #000000);
+    background-image: linear-gradient(to bottom, #000000, #000000);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    text-shadow: 0 1px 3px #080708;
+    color: #ffffff;
+    font-size: 20px;
+    height: 23px;
+    width: 23px;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+.btn:hover {
+    background: #cf1b2a;
+}
+.selection-purchases-but{
+    background: none;
+    border: 2px solid #000;
+    width: 28px;
+    height: 26px;
+    font-size: 18px
+}
+.purchases-number{
+    display: inline-block;
+    font-family: "RajdhaniR",sans-serif;
+    background: #d1d1d1;
+    padding: 5px 9px 2px 8px;
+    font-size: 18px;
+    width: 35px;
+}
+.footer-inner-benefits-wrapper{
+    width: 420px;
+}
+.benefits-selection-right{
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    position: relative;
+    top: 8px;
+}
+.selection-right-del{
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 26px;
+    border: 1px solid black;
+    color: #FFFFFF;
+    margin-bottom: 61px;
+}
+.selection-right-del:before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    top: 2px;
+    left: 12px;
+    transform: rotate(34deg);
+    background: black;
+}
+.selection-right-del:after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    top: 2px;
+    left: 12px;
+    transform: rotate(-34deg);
+    background: black;
+}
+.selection-price{
+    font-family: "RajdhaniR",sans-serif;
+    font-size: 22px;
+}
+.benefits-order-inner{
+    background: #dcdcdc;
+    padding: 15px 0;
+}
+.benefits-price-par{
+    float: left;
+    font-family: "RajdhaniS",sans-serif;
+    font-size: 22px;
+    margin-left: 9px;
+}
+.benefits-price-total{
+    display: block;
+    text-align: right;
+    font-family: "RajdhaniR",sans-serif;
+    font-size: 22px;
+}
+.order-purchases{
+    display: inline-block;
+    width: 224px;
+    height: 66px;
+    vertical-align: top;
+    margin-right: -4px;
+    padding: 6px 0;
+}
+.order-purchases-par{
+    display: block;
+    text-decoration: none;
+    margin-left: 42px;
+    margin-top: 12px;
+    line-height: 24px;
+    color: #b3b3b3;
+}
+.order-purchases-parm{
+    display: block;
+    text-decoration: none;
+    margin-left: 36px;
+    color: #b3b3b3;
+    margin-bottom: 4px
+}
+.order-control{
+    display: inline-block;
+    background: black;
+    position: relative;
+}
+.order-control-par{
+    display: block;
+    font-family: "RajdhaniB",sans-serif;
+    font-size: 26px;
+    color: white;
+    padding: 26px 242px 18px 20px;
+    text-decoration: none;
+}
+.mod{
+    font-family: "RajdhaniB",sans-serif;
+    font-size: 26px;
+}
+.order-control-par:after{
+    content: '';
+    position: absolute;
+    border: 2px solid #fff;
+    border-right-width: 0;
+    border-top-width: 0;
+    color: white;
+    right: 202px;
+    top: 31px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-134deg);
 }
 .menu-main-line{
 display: inline-block;
@@ -1241,6 +1687,10 @@ position: relative;
 font-family: RajdhaniM,sans-serif;
 vertical-align: top;
 }
+.menu-login-cart_imglogo{
+    pointer-events: none;
+    display: inline-block;
+}
 .menu-login-cart_imglogo img{
 width: 31px;
 padding-top: 5px;
@@ -1260,7 +1710,97 @@ text-align: center;
 right: 15px;
 border: 3px solid #000;
 }
-/*КОНЕЦ СЕКЦИИ SLIDER*/
+/*началоа секции скрытого меню справа*/
+    .slider-menu-icon{
+        height: auto;
+    }
+    .slider-menu-popup-left .slider-menu-popup-cont-left {
+        position: absolute;
+        top: 19.9%;
+        width: 300px;
+        height: auto;
+    }
+    .menu-layer {
+        background: white;
+        position: relative;
+        width: 300px;
+        height: auto;
+        overflow: hidden;
+         border: 2px solid black;
+    }
+    .menu-layer-search{
+        margin-bottom: 19px;
+    }
+    .menu-layer-start {
+        font-family: "RajdhaniM",sans-serif;
+        background: #000;
+        padding: 11px 10px 11px 20px;
+    }
+    .seasrc-container {
+        /* width: 415px; */
+        vertical-align: middle;
+        white-space: nowrap;
+        padding: 9px 1px 8px 1px;
+    }
+    .seasrc-container input#search {
+        width: 225px;
+        height: 45px;
+        background: #fff;
+        border: none;
+        font-size: 12px;
+        float: left;
+        color: #000;
+        padding-left: 12px;
+    }
+    .seasrc-container button.icon {
+        border: none;
+        background: #232833;
+        height: 45px;
+        width: 45px;
+        font-size: 21px;
+        margin-left: 8px;
+        color: #fff;
+    }
+    .menu-inner-link {
+        font-family: "RajdhaniM",sans-serif;
+        font-size: 18px;
+        display: block;
+        padding: 15px 22px 8px 27px;
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        border-bottom: 1px solid #ddd;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+    .menu-inner-link i {
+        font-size: 13px;
+    }
+    .social-footer-menu-links {
+        color: #000;
+        font-size: 23px;
+        margin-right: 6px;
+    }
+    .menu-inner-content_par{
+        font-size: 18px;
+        padding: 10px 0 10px 25px;
+
+    }
+    .menu-inner-content_par:before {
+        content: '';
+        top: 13px;
+    }
+    .menu-layer-close_link:before{
+         top: -5px;
+    }
+    .menu-layer-close_link:after {
+        top: -5px;
+    }
+
+
+
+    /*КОНЕЦ СЕКЦИИ SLIDER*/
 .main-content-wrapper{
 width:768px;
 }
